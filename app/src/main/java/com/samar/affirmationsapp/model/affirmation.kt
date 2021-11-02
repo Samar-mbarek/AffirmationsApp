@@ -1,3 +1,10 @@
 package com.samar.affirmationsapp.model
 
-data class affirmation(val stringResourceId: Int)
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+data class affirmation(
+@StringRes
+val stringResourceId: Int,
+@DrawableRes
+val imageResourceId: Int)
